@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+<div class="overlay" id="RegisterPopup">
+    <div class="popup">
+        <span class="close-btn" onclick="redirectToHomePage()">&times;</span>
+        <h2>Register</h2>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="date" placeholder="DOB" required>
+        <input type="number" placeholder="Phone number">
+        <div class="gender"> 
+            <label for="male">Male</label><input type="radio" name="gender" id="male">
+            <label for="female">Female</label><input type="radio" name="gender" id="female">
+        </div>
+    
+        <button onclick="redirectToHomePage()">Register</button>
+        
+    </div>
+</div>
+
+<script>
+   
+    function closePopup() {
+        document.getElementById("RegisterPopup").style.display = "none";
+    }
+ 
+    function redirectToHomePage() {
+        window.location.href = "index.html";   
+    }
+</script>
+
+</body>
+</html>
